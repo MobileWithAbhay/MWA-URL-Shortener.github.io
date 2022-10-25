@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background:linear-gradient(to right, rgb(247, 91, 62), rgb(237, 160, 100));
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+.from{
+  background: linear-gradient(to right, rgb(118, 229, 252), rgb(228, 240, 95));
+  box-shadow: 0px 0px 10px gray;
+  padding: 20px;
+  width: 305px;
+  border-radius: 5px;
+}
+h2{
+  text-align: center;
+  color: #1853EA;
+  font-size: 25px;
+}
+h2 span{
+  color: #F64445;
+}
+/* input box */
+.link{
+    width: 99%;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid #7F0ED5;
+    border-radius: 5px;
+}
+button{
+  width: 100%;
+  border: none;
+  opacity: 0.7;
+  outline: none;
+  color: #fff;
+  cursor: none;
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 15px 0;
+  border-radius: 5px;
+  background: #4285F4;
+  transition: opacity 0.15s ease;
+}
+button:active{
+  background: linear-gradient(to right, rgb(247, 91, 62), rgb(237, 160, 100));
+}
+
+.results{
+    position: absolute;
+    width: 277px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid #7F0ED5;
+    border-radius: 5px 0 0 5px;
+}
+.clipboard{
+  position: relative;
+  margin-left: 279px;
+  margin-top: 10px;
+  width: 30px;
+  height: 49px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #7F0ED5;
+  border-radius: 0 5px 5px 0;
+}
+@media screen and (max-width: 700px){
+  body{
+    padding: 0 20px;
+  }
+  form{
+    font-size: 24px;
+  }
+}
